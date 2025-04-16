@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сообщение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .message {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .message h2 {
+            margin-bottom: 20px;
+        }
+
+        .message a {
+            display: inline-block;
+            margin-top: 20px;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .message a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <h2>{{ message }}</h2>
+        <a href="{% url 'login' %}">Войти</a>
+    </div>
+</body>
+</html>
